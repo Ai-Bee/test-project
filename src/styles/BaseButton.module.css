@@ -1,0 +1,66 @@
+@import '../styles/index.css';
+
+.base-button {
+  font-family: "Manrope", sans-serif; 
+    padding: 12px 29px;
+    border-radius: 51px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    min-width: 110px;
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.5s ease-out
+  }
+
+  .base-button:active {
+    scale: 0.4;
+  }
+  
+  .base-button.green {
+    background-color: var(--template-green);
+    color: var(---template-deep-blue);
+    border: none;
+  }
+
+  .base-button.green:hover {
+    color: var(--template-green);
+    background-color: var(---template-deep-blue);
+    border: 1px solid var(--template-green);
+  }
+
+  .base-button.filled-white {
+    background-color: #fff;
+    color: var(---template-deep-blue);
+    border: 1px solid #0A2640;
+  }
+  
+
+  .base-button.filled-white:hover {
+    color: #fff;
+    background-color: #0A2640;
+    border: 1px solid #0A2640;
+  }
+  
+  
+  .base-button.filled-blue {
+    background-color: #0A2640;;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+
+  .base-button.filled-blue:hover {
+    color: var(---template-deep-blue);;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .base-button {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  

@@ -1,0 +1,1 @@
+export type iconTitle = 'boldo-icon' | 'presto-icon' | 'arrow-right' | 'caret-down';

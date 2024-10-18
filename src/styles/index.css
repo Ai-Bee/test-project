@@ -1,0 +1,15 @@
+
+
+:root {
+  --template-deep-blue: #0A2640;
+  --template-green: #65E4A3;
+  --template-blue: #1C3D5B;
+}
+
+body {
+  margin: 0;
+  font-optical-sizing: auto;
+    padding: 0;
+    box-sizing: border-box;
+    
+}

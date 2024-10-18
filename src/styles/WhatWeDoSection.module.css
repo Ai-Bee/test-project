@@ -1,0 +1,135 @@
+@import '../styles/index.css';
+
+.section-with-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 50px;
+  }
+
+  .section-with-image-reversed {
+    flex-direction: row-reverse;
+  }
+  
+  .image-container {
+    position: relative;
+    max-width: 450px;
+  }
+  
+  .section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .chart-overlay {
+    position: absolute;
+    bottom: -25%;
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding:25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+
+  .chart-overlay img {
+    max-width: 200px;
+  }
+  
+  .content-container {
+    max-width: 500px;
+  }
+
+  .content-container h2 {
+    font-size: 30px;
+  }
+  
+  .points-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .points-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-with-image-reversed > .content-container ul > li {
+    padding: 15px 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease-out;
+  }
+
+  .section-with-image-reversed > .content-container ul > li:hover, .section-with-image-reversed > .content-container ul > li:focus, .section-with-image-reversed > .content-container ul > li:active {
+    background-color: #0A2640;
+    color: #fff;
+  }
+  
+  .points-list li:before {
+    content: url('../resources/blueCheck.svg');
+    margin-right: 10px;
+    color: #007BFF;
+  }
+
+  .section-with-image-reversed > .content-container ul > li:first-of-type:before {
+    content: url('../resources/feather.svg');
+  }
+
+  .section-with-image-reversed > .content-container ul > li:nth-of-type(2):before {
+    content: url('../resources/eye.svg');
+  }
+
+  .section-with-image-reversed > .content-container ul > li:nth-child(3):before{
+    content: url('../resources/sun.svg');
+  }
+
+  .section-with-image-reversed > .content-container ul > li:hover:before, .section-with-image-reversed > .content-container ul > li:focus:before, .section-with-image-reversed > .content-container ul > li:active:before {
+    filter: invert(1);
+  }
+
+.parent-container {
+    padding: 10px 90px;
+
+}
+
+
+@media (max-width: 768px) {
+    .section-with-image {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 25px;
+
+    }
+    .parent-container {
+      padding: 0 10px;
+  
+  }
+    .image-container {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 0px;
+    }
+    .content-container {
+      max-width: 90%;
+    }
+  
+    .content-container h2 {
+      font-size: 20px;
+    }
+    .points-list li {
+      text-align: start;
+    }
+    .chart-overlay {
+      bottom: -2%;
+      left: 75%;
+    }
+    .chart-overlay img {
+      max-width: 70px;
+    }
+  }
+  

@@ -1,0 +1,106 @@
+@import '../styles//index.css';
+
+.review-card {
+    text-align:left;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px 20px 40px;
+    background-color: white;
+    max-width: 300px;
+    transition: transform 0.2s ease;
+  }
+
+.review-card-description {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  
+  .reviews-section {
+    background-color: var(--template-deep-blue);
+    text-align: center;
+    padding: 30px 90px 40px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+
+  
+  .reviews-section-subtitle {
+    font-size: 2.5rem;
+    color: white;
+    text-align: left;
+    width: 50%;
+    align-self: flex-end;
+  }
+
+  .review-section-top {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .reviews-section-nav {
+    display: flex;
+    gap: 10px;
+  }
+
+  .reviews-section-nav > button.reviews-section-nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 100%;
+    transition: all 0.5s ease-out;
+  }
+
+  button.reviews-section-nav-button:nth-of-type(1) svg {
+    transform: rotate(180deg) !important;
+  }
+
+  button.reviews-section-nav-button:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
+  }
+  
+  .reviews-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .reviews-card-container {
+      flex-direction: column;
+      align-items: center;
+      gap:20px;
+    }
+    .reviews-section {
+      text-align: center;
+      padding: 30px;
+      margin-top: 1em;
+      margin-bottom: 2em;
+    }
+    .reviews-section-subtitle {
+      font-size: 1.5rem;
+      width: 70%;
+    }
+    .review-card {
+      padding: 20px;
+      max-width: 90%;
+    }
+    .reviews-section-nav > button.reviews-section-nav-button {
+      width: 40px;
+      height: 40px;
+
+    }
+  
+  }
+  

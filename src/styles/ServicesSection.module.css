@@ -1,0 +1,127 @@
+.service-card {
+    text-align:left;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 300px;
+    transition: transform 0.2s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card-image {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+
+  .service-card-image.service-card-image-blog-view {
+    height: 90%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .service-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .service-card-title.service-card-title-blog {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .service-card-title.service-card-title-blog  > span.service-card-title-blog-date {
+    color: gray;
+    font-size: smaller;
+    font-weight: lighter;
+    padding-left: 5px;
+  }
+  
+  .service-card-description {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .service-card-link {
+    text-decoration: underline;
+    padding-bottom: 10px;
+    text-underline-offset: 5px;
+    color: var(---template-deep-blue);
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .service-card-link span {
+    margin-left: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .service-card-link:hover span {
+    transform: translateX(5px);
+  }
+  
+  .service-section {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .service-section-blog-view {
+    margin-bottom: 22em;
+  }
+  
+  .service-section-title {
+    font-size: 1rem;
+    color: #777777;
+  }
+  
+  .service-section-subtitle {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .service-card-container {
+    display: flex;
+    position: relative;
+    padding: 0 90px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .blog-see-more-btn {
+    position:absolute;
+     left: 45%;
+      bottom: -290px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .service-card-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+    }
+    .service-section-subtitle {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    .blog-see-more-btn {
+      left:5%;
+        bottom: -85px
+    }
+    .service-section-blog-view {
+      margin-bottom: 4em;
+    }
+  }
+  
